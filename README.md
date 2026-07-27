@@ -27,15 +27,14 @@ The method relies on the principle that **equal water weight implies equal volum
 1. Fill a **reference rectangular container** with water.
 2. Pour that exact water volume into a **circular container**.
 3. Measure:
-   - \( d_{\text{rect}} \): water depth in the rectangle  
-   - \( d_{\text{circle}} \): water depth in the circle  
+   - d_rect — water depth in the rectangle   
+   - d_circle — water depth in the circle 
 4. Compute the circle’s area using:
 
 
 
 \[
-A_{\text{circle}} = A_{\text{rect}} \cdot \frac{d_{\text{rect}}}{d_{\text{circle}}}
-\]
+A_circle = A_rect × (d_rect ÷ d_circle)\]
 
 
 
