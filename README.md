@@ -45,7 +45,7 @@ For any two shapes filled with the same water volume:
 
 
 \[
-A_2 = A_1 \cdot \left( \frac{d_2}{d_1} \right)^2
+A2 = A1 × (d2 ÷ d1)²
 \]
 
 
