@@ -1,1 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Circle Area Without Pi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: sans-serif;
+            max-width: 700px;
+            margin: 40px auto;
+            line-height: 1.6;
+        }
+        h1, h2 {
+            font-weight: 600;
+        }
+        code {
+            background: #f2f2f2;
+            padding: 4px 6px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
 
+<h1>Circle Area Without Using Pi</h1>
+<p><strong>By Raphael E. Asanti</strong></p>
+
+<h2>Abstract</h2>
+<p>
+This method determines the area of a circle without using π by comparing water depths
+between a rectangular container and a circular container holding the same water volume.
+The ratio of depths directly yields the ratio of areas.
+</p>
+
+<h2>The Method</h2>
+<p>
+Fill a rectangular container with water, then pour that exact volume into a circular container.
+Measure the water depths:
+</p>
+
+<ul>
+    <li><code>d_rect</code> — water depth in the rectangle</li>
+    <li><code>d_circle</code> — water depth in the circle</li>
+</ul>
+
+<p>The circle’s area is then:</p>
+
+<p><code>A_circle = A_rect × (d_rect ÷ d_circle)</code></p>
+
+<h2>Generalized Form</h2>
+<p>
+For any two shapes filled with the same water volume:
+</p>
+
+<p><code>A₂ = A₁ × (d₂ / d₁)²</code></p>
+
+<h2>Download the Full Paper</h2>
+<p>
+<a href="nopi.pdf">Click here to download the full PDF</a>
+</p>
+
+<h2>License</h2>
+<p>
+This work is licensed under the Creative Commons CC BY‑NC‑ND 4.0 License.
+See the LICENSE file in the repository for full terms.
+</p>
+
+</body>
+</html>
