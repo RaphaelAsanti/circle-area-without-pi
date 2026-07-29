@@ -90,3 +90,5 @@ See the [`LICENSE`](LICENSE) file for full legal terms.
 
 Raphael E. Asanti  
 July 2026
+
+Additional background context is available [here](https://raphaelasanti.github.io/the-eye-of-the-needle/).
