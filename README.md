@@ -58,6 +58,13 @@ This provides a **direct physical measurement** of area without π or calculus.
 
 **[Click here to download the full paper (PDF)](nopi.pdf)**
 
+## Web Version
+
+A mobile‑friendly, SEO‑optimized HTML presentation of the method is available here:
+
+**[View the index.html page](https://raphaelasanti.github.io/circle-area-without-pi/)**
+
+
 ---
 
 ## License
@@ -69,15 +76,17 @@ See the [`LICENSE`](LICENSE) file for full legal terms.
 
 ## Repository Contents
 
+## Repository Contents
+
 - `README.md` — Project overview  
 - `LICENSE` — Creative Commons license  
 - `nopi.pdf` — Full research paper  
-- (Optional) `index.html` — Web presentation of the method
+- **[index.html](https://raphaelasanti.github.io/circle-area-without-pi/)** — Web presentation of the method
+
 
 ---
 
 ## Author
 
 Raphael E. Asanti  
-Lucedale, Mississippi  
 July 2026
