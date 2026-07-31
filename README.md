@@ -1,4 +1,4 @@
-# How To Measure the Area of a Circle Without Using Pi
+# How To Calculate the Area of a Circle Without Pi
 
 **By Raphael E. Asanti — July 2026**
 
