@@ -73,16 +73,12 @@ This work is licensed under the **Creative Commons CC BY‑NC‑ND 4.0** License
 See the [`LICENSE`](LICENSE) file for full legal terms.
 
 ---
-
-## Repository Contents
-
 ## Repository Contents
 
 - `README.md` — Project overview  
 - `LICENSE` — Creative Commons license  
 - `nopi.pdf` — Full research paper  
 - **[index.html](https://raphaelasanti.github.io/circle-area-without-pi/)** — Web presentation of the method
-
 
 ---
 
