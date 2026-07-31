@@ -1,4 +1,4 @@
-# A Direct Physical Method for Determining the Area of a Circle Without Using Pi
+# How To Measure the Area of a Circle Without Using Pi
 
 **By Raphael E. Asanti — July 2026**
 
