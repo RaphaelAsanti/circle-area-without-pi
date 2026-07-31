@@ -24,8 +24,8 @@ The method relies on the principle that **equal water weight implies equal volum
 
 ## The Method (Summary)
 
-1. Fill a **reference rectangular container** with water.
-2. Pour that exact water volume into a **circular container**.
+1. Fill a **cylinder** with the diameter of the circle you want to measure with water.
+2. Pour that exact water volume into a **square container**.
 3. Measure:
    - d_rect — water depth in the rectangle   
    - d_circle — water depth in the circle 
