@@ -1,209 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>How To Accurately Calculate The Area of a Circle Without Pi</title>
-    <meta name="description" content="A simple, exact method to find the area of a circle without using pi. Uses water depth to compare shapes. Easy for kids and adults.">
-<meta name="keywords" content="circle area without pi, no pi method, easy math, water depth method, circle area formula, grade school math, simple geometry">
-<meta property="og:title" content="Circle Area Without Pi">
-<meta property="og:description" content="A measurement-based method for determining circle area without pi. Includes diagrams and a downloadable white paper.">
-<meta property="og:url" content="https://raphaelasanti.github.io/circle-area-without-pi/">
-<meta property="og:type" content="article">
-    
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "TechArticle",
-  "headline": "Circle Area Without Pi",
-  "description": "A measurement-based geometric method for calculating the area of a circle without using pi.",
-  "author": {
-    "@type": "Person",
-    "name": "Raphael E. Asanti"
-  },
-  "url": "https://raphaelasanti.github.io/circle-area-without-pi/"
-}
-</script>
+  <meta charset="utf-8" />
+  <title>How to Find the Area of a Circle Without π — A Simple Water Method</title>
+  <meta name="description" content="A hands-on method that measures circle area without using π: transfer the same water volume between shapes and compare depths. Includes diagrams, a worked example, and a small calculator." />
+  <meta name="keywords" content="circle area without pi, water method, measurement, hands-on math, grade school geometry" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="canonical" href="https://raphaelasanti.github.io/circle-area-without-pi/" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
+  <!-- Open Graph / Twitter -->
+  <meta property="og:title" content="How to Find the Area of a Circle Without π — A Simple Water Method" />
+  <meta property="og:description" content="Use water and a reference shape to determine a circle's area exactly — no π required. Includes diagrams and a downloadable paper." />
+  <meta property="og:url" content="https://raphaelasanti.github.io/circle-area-without-pi/" />
+  <meta property="og:type" content="article" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "How to Find the Area of a Circle Without π — A Simple Water Method",
+    "description": "A measurement-based method for calculating circle area by comparing equal water volumes in two containers.",
+    "author": { "@type": "Person", "name": "Raphael E. Asanti" },
+    "url": "https://raphaelasanti.github.io/circle-area-without-pi/",
+    "datePublished": "2026-07-01"
+  }
+  </script>
+
+  <style>
+    :root {
+      --max-width: 920px;
+      --accent: #0b3d91;
+      --muted: #666;
+      --card-bg: #fbfbfb;
+    }
+    html,body { height: 100%; }
     body {
-        font-family: system-ui, -apple-system, sans-serif;
-        max-width: 720px;
-        margin: 40px auto;
-        padding: 0 20px;
-        line-height: 1.65;
-        color: #111;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      margin: 0;
+      padding: 24px;
+      background: #fff;
+      color: #111;
+      line-height: 1.6;
+      display: flex;
+      justify-content: center;
     }
+    .wrap {
+      max-width: var(--max-width);
+      width: 100%;
+    }
+    a { color: var(--accent); text-decoration: underline; }
+    header { margin-bottom: 18px; }
+    h1 { font-size: 1.6rem; margin: 0 0 6px; }
+    h2 { font-size: 1.15rem; margin-top: 1.25rem; margin-bottom: 0.5rem; }
+    p { margin: 0 0 1rem 0; }
+    .meta { color: var(--muted); font-size: 0.95rem; margin-bottom: 14px; }
+    .topnav { text-align: center; margin-bottom: 18px; }
+    .topnav a { margin: 0 6px; }
 
-    h1 {
-        font-size: 2rem;
-        margin-bottom: 0.5rem;
-        font-weight: 600;
-    }
+    main { display: block; background: white; padding: 14px 10px; border-radius: 8px; box-shadow: 0 6px 20px rgba(12,16,30,0.04); }
+    .columns { display: flex; gap: 22px; align-items: flex-start; }
+    .content { flex: 1; }
+    aside.sidebar { width: 280px; flex: 0 0 280px; background: var(--card-bg); border: 1px solid #e3e3e3; padding: 12px; border-radius: 8px; font-size: 0.95rem; }
+    .support strong { display:block; margin-bottom:6px; }
+    .section { margin-bottom: 18px; }
 
-    h2 {
-        font-size: 1.35rem;
-        margin-top: 2rem;
-        margin-bottom: 0.75rem;
-        font-weight: 600;
-    }
+    figure.diagram { margin: 14px 0; text-align: center; }
+    figure.diagram img, figure.diagram svg { max-width: 100%; height: auto; display: block; margin: 0.5rem auto; border: 1px solid #e7e7e7; border-radius: 6px; background: #fff; }
+    figcaption { font-size: 0.9rem; color: var(--muted); margin-top: 6px; }
 
-    p, li {
-        font-size: 1rem;
-        margin-bottom: 1rem;
-    }
+    .callout { background:#f3f8ff; border-left: 3px solid var(--accent); padding:10px 12px; border-radius:6px; margin: 10px 0; }
+    .code { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", monospace; background:#f6f6f6; padding:4px 6px; border-radius:4px; font-size:0.98rem; }
 
-    code {
-        background: #f5f5f5;
-        padding: 3px 6px;
-        border-radius: 4px;
-        font-size: 0.95rem;
-    }
+    .calculator { border: 1px dashed #ddd; padding: 12px; border-radius: 6px; margin-top: 8px; }
+    .calculator label { display:block; margin-bottom:6px; font-size:0.95rem; }
+    .calculator input[type="number"] { width: 100%; padding:8px; border:1px solid #ccc; border-radius:4px; margin-bottom:8px; }
+    .btn { display:inline-block; background:var(--accent); color:#fff; padding:8px 12px; border-radius:6px; cursor:pointer; text-decoration:none; }
+    .result { margin-top:8px; font-weight:600; }
 
-    a {
-        color: #000;
-        text-decoration: underline;
-    }
+    footer { margin-top: 18px; color: var(--muted); font-size: 0.95rem; text-align:center; }
 
-    ul {
-        margin-left: 20px;
+    /* Responsive: stack columns under narrow widths */
+    @media (max-width: 880px) {
+      .columns { flex-direction: column; }
+      aside.sidebar { width: 100%; order: 2; }
     }
-</style>
+  </style>
 </head>
 <body>
+  <a href="#main-content" class="skip-link" style="position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden;">Skip to main content</a>
 
-<div style="text-align:center; margin-bottom:20px;">
-    <a href="https://raphaelasanti.github.io/">← Back to Main Index</a>
-</div>
+  <div class="wrap" role="document">
+    <header>
+      <div class="topnav">
+        <a href="https://raphaelasanti.github.io/">← Back to Main Index</a>
+        <span style="color:var(--muted)">•</span>
+        <a href="https://github.com/RaphaelAsanti/circle-area-without-pi" target="_blank" rel="noopener noreferrer">View Repo</a>
+      </div>
+      <h1>How to Find the Area of a Circle Without π</h1>
+      <p class="meta">A simple, hands-on measurement method using water. By Raphael E. Asanti — July 2026</p>
+      <p style="margin-top:6px"><strong>Quick hook:</strong> Use water and a rectangle you can measure to find a circle’s area exactly — no rounding of π needed. Try the calculator below after you read the steps.</p>
+    </header>
 
-<h1>How To Accurately Calculate The Area of a Circle Without Pi</h1>
-<p><strong>By Raphael E. Asanti</strong></p>
-    <h2>What This Page Teaches</h2>
-<p>
-This page shows a simple and easy way to find the area of a circle without using pi. 
-We use water to compare two shapes. If the surface area of the water is the same, the areas match. 
-This method is exact and simple enough for grade school.
-</p>
-<div style="
-    float: right;
-    width: 280px;
-    margin: 0 0 20px 20px;
-    padding: 15px;
-    border: 1px solid #ccc;
-    background: #f9f9f9;
-    font-size: 0.9em;
-    line-height: 1.4;
-">
-    <strong>Support the Work</strong><br><br>
+    <main id="main-content" role="main" class="section" aria-labelledby="method-heading">
+      <div class="columns">
+        <div class="content">
+          <section class="section" id="abstract">
+            <h2 id="method-heading">Abstract (in one line)</h2>
+            <p>This method measures equal water volumes in two shapes. Because the same volume = area × depth, comparing depths gives the ratio of areas. That gives the circle's area when you know the area of the reference shape.</p>
+          </section>
 
-    We have never sent a messenger who did not eat food and walk in the marketplaces.<br><br>
+          <section class="section" id="what-you-need">
+            <h2>What you need (equipment)</h2>
+            <ul>
+              <li>A rectangular container whose area you can measure (a square or rectangle with straight sides). Example: a 20 cm × 10 cm shallow tray.</li>
+              <li>A circular container (the circle whose area you want to find).</li>
+              <li>A measuring ruler (mm or cm), funnel or small cup to pour water accurately, and a level surface.</li>
+              <li>A notebook to record depths (write units: cm or mm).</li>
+            </ul>
+            <p class="callout"><strong>Tip:</strong> Work on a flat, level table and measure depths at the center of each open-top container. Avoid splashes and read the ruler at eye level to reduce error.</p>
+          </section>
 
-    <strong>My only income is voluntary donations.</strong><br><br>
-If you would like to support this work, you may give through Cash App:<br>
+          <section class="section" id="the-method">
+            <h2>The method — step by step</h2>
+            <ol>
+              <li>Measure and record the area of your rectangular reference container. If it's a 20 cm × 10 cm tray, its area is <span class="code">A_rect = 200 cm²</span>.</li>
+              <li>Fill the rectangle with water to any depth and note that depth as <span class="code">d_rect</span> (for example, 4.0 cm).</li>
+              <li>Carefully pour that same exact water into the circular container and measure the resulting depth there — call it <span class="code">d_circle</span> (for example, 2.0 cm).</li>
+              <li>Use the formula below to compute the circle's area.</li>
+            </ol>
 
-    <strong>Cash App:</strong><br>
-    <a href="https://cash.app/$phirunltd">https://cash.app/$phirunltd</a><br><br>
-If you do not use Cash App, you can donate through Gumroad by entering any amount and downloading my ebook:<br>
-    <strong>Gumroad:</strong><br>
-    <a href="https://phirun4.gumroad.com/l/zsmzjh">Donate via Gumroad</a><br><br>
-    The ebook remains free for everyone. You can download it here:<br>
-    <strong>Free Ebook:</strong><br>
-    <a href="https://raphaelasanti.github.io/the-end-of-time/">
-        Download on GitHub
-    </a>
-</div>
+            <!-- Diagram: equal-water-depth.svg -->
+            <figure class="diagram" aria-labelledby="fig1-title fig1-desc">
+              <img src="equal-water-depth.svg" alt="Two containers side-by-side: a rectangular tray and a circular container. Both hold the same water volume; the heights (depths) differ." />
+              <figcaption>
+                <strong id="fig1-title">Figure 1 — Equal-volume test</strong>
+                <div id="fig1-desc">Transfer the same water volume between the rectangle and the circle. Measure <em>d_rect</em> and <em>d_circle</em> to compare areas.</div>
+              </figcaption>
+            </figure>
 
+            <h2>Why this works (simple math)</h2>
+            <p>When two containers hold the same water volume, the volume V equals area × depth for each shape:</p>
+            <p class="code">V = A<sub>rect</sub> × d<sub>rect</sub> = A<sub>circle</sub> × d<sub>circle</sub></p>
+            <p>Rearrange to solve for the circle's area:</p>
+            <p class="code">A<sub>circle</sub> = A<sub>rect</sub> × (d<sub>rect</sub> ÷ d<sub>circle</sub>)</p>
+            <p><strong>Important:</strong> The ratio uses <em>d_rect ÷ d_circle</em> (not squared). Use the same units for depths (for example, both in cm).</p>
+          </section>
 
+          <section class="section" id="example">
+            <h2>Simple worked example</h2>
+            <p>Suppose your rectangular tray is 20 cm × 10 cm, so <span class="code">A_rect = 200 cm²</span>.</p>
+            <p>You fill the tray and measure the water depth: <span class="code">d_rect = 4.0 cm</span>. When you pour that same water into the circular container you measure <span class="code">d_circle = 2.0 cm</span>.</p>
+            <p>Compute the circle area:</p>
+            <p class="code">A_circle = 200 × (4.0 ÷ 2.0) = 200 × 2 = 400 cm²</p>
+            <p>So the circle's area is <strong>400 cm²</strong>. (This is exact given exact measurements of area and depths.)</p>
 
-<h2>Abstract</h2>
-<p>
-This method determines the area of a circle without using π by comparing water depths
-between a rectangular container and a circular container holding the same water volume.
-The ratio of depths directly yields the ratio of areas.
-</p>
+            <!-- Diagram: half-depth-larger-square.svg -->
+            <figure class="diagram" aria-labelledby="fig2-title fig2-desc">
+              <img src="half-depth-larger-square.svg" alt="Illustration showing the rectangle at depth 4 and the circle at depth 2 to indicate the example's ratio." />
+              <figcaption>
+                <strong id="fig2-title">Figure 2 — Example visualization</strong>
+                <div id="fig2-desc">When the rectangle depth is twice the circle depth, the circle area is twice (200 → 400 cm² in the sample above).</div>
+              </figcaption>
+            </figure>
+          </section>
 
-<h2>The Method</h2>
-<p>
-Fill a cylindrical container with water, then pour that exact volume into a square (or rectangular) container.
-Measure the water depths:
-</p>
+          <section class="section" id="calculator">
+            <h2>Try it — quick calculator</h2>
+            <p>Enter what you measured and the calculator shows the circle area.</p>
+            <div class="calculator" aria-live="polite">
+              <label for="a_rect">Reference area A_rect (in cm²)</label>
+              <input id="a_rect" type="number" min="0" step="any" placeholder="e.g. 200" />
 
-<ul>
-    <li><code>d_rect</code> — water depth in the rectangle</li>
-    <li><code>d_circle</code> — water depth in the circle</li>
-</ul>
+              <label for="d_rect">Depth in rectangle d_rect (same units as d_circle)</label>
+              <input id="d_rect" type="number" min="0" step="any" placeholder="e.g. 4.0" />
 
-<p>The circle’s area is then:</p>
+              <label for="d_circle">Depth in circle d_circle</label>
+              <input id="d_circle" type="number" min="0" step="any" placeholder="e.g. 2.0" />
 
-<p><code>A_circle = A_rect × (d_rect ÷ d_circle)</code></p>
+              <button id="calcBtn" class="btn" type="button">Compute A_circle</button>
+              <div id="calcResult" class="result" aria-live="polite"></div>
+            </div>
 
-<h2>Generalized Form</h2>
-<p>
-For any two shapes filled with the same water volume:
-</p>
+            <script>
+              // Simple, accessible calculator
+              (function(){
+                var btn = document.getElementById('calcBtn');
+                btn.addEventListener('click', function(){
+                  var aRect = parseFloat(document.getElementById('a_rect').value);
+                  var dRect = parseFloat(document.getElementById('d_rect').value);
+                  var dCircle = parseFloat(document.getElementById('d_circle').value);
+                  var out = document.getElementById('calcResult');
 
-<p><code>A₂ = A₁ × (d₂ / d₁)²</code></p>
-<h2>Accuracy Statement</h2>
-<p>
-This method is exact. We use water to compare two shapes. 
-If both shapes hold the same water, their areas match the water depths. 
-We do not need pi at all. Pi is a number that goes on forever, 
-so people have to round it. This method does not round anything. 
-It uses real water and real measurements, so the answer is exact.
-</p>
-    <h2>Why We Do Not Use Pi</h2>
-<p>
-Pi is a special number that goes on forever. Because it never ends, 
-people have to round it when they use it. Rounding makes tiny errors. 
-This method does not use pi at all. It uses water, which gives an exact answer.
-</p>
+                  if (!isFinite(aRect) || !isFinite(dRect) || !isFinite(dCircle) || dCircle === 0) {
+                    out.textContent = 'Please enter positive numbers for all fields and ensure d_circle is not zero.';
+                    return;
+                  }
+                  var aCircle = aRect * (dRect / dCircle);
+                  // Round to reasonable precision for display
+                  var rounded = Math.round(aCircle * 100) / 100;
+                  out.textContent = 'A_circle = ' + rounded + ' (same units as A_rect)';
+                });
+              })();
+            </script>
+          </section>
 
+          <section class="section" id="accuracy">
+            <h2>Accuracy notes (what to watch for)</h2>
+            <ul>
+              <li>Meniscus: read the water level at eye height and use the same reading method for both containers.</li>
+              <li>Container walls: thin straight sides are best. Round rims and sloping sides can change the effective area near the top.</li>
+              <li>Volume loss: pour carefully to avoid spillage. Use a funnel or transfer cup for better control.</li>
+              <li>Units: measure area and depths in consistent units (e.g., cm² and cm).</li>
+            </ul>
+            <p>If you follow these, your measured area will match the formula exactly to within your measurement precision.</p>
+          </section>
 
-<h2>Simple Example</h2>
-<p>
-If the rectangle has water depth 4 and the circle has water depth 2, 
-the circle’s area is twice the rectangle’s area. 
-This comes from the easy formula: A_circle = A_rect × (4 ÷ 2).  Since we can calculate the area of the square with absolute precision
-    we then know the area of the circle with 100% accuracy.
-</p>
-    <h2>From One Circle to All Circles</h2>
-<p>
-Once we know the exact area of the first circle using water, we can calculate the 
-area of any other circle using simple algebra. We do not need pi at all. 
-If Circle 1 has area A₁ and Circle 2 has radius r₂, then we can compare their 
-water depths or use ratios to find A₂ exactly. The first circle gives us a 
-perfect reference, and every other circle follows from that reference with 
-100% accuracy.
-</p>
-<h2>Do this once and you’ll Never Need Pi Again</h2>
-<p>
-After we measure the first circle’s area exactly using water, we can find the 
-area of any other circle using simple ratios. Pi is only required for formulas. 
-It is not required for measurement. Once the first circle is known, every other 
-circle follows from that reference with perfect accuracy. You never need pi again.
-</p>
-    <h2>Download the Full Paper</h2>
-<p>
-<a href="nopi.pdf">Click here to download the full PDF</a>
-</p>
-<p>
-<h2>Excerpt From My Ebook</h2>
-<p>
-This page is from a small part of my ebook <em>The End of Time</em>. The book explains 
-this measurement method in more detail and shows how it connects to larger ideas 
-about geometry, physical exactness, and the structure of creation. One theme in 
-the book is the idea that “God doesn’t deal in inaccuracies,” meaning that the 
-physical world was built with precise relationships that do not depend on human 
-approximations. The circle method is one example of that larger perspective.
+          <section class="section" id="downloads">
+            <h2>Downloads & further reading</h2>
+            <p><a href="nopi.pdf" target="_blank" rel="noopener noreferrer">Download the full paper (nopi.pdf)</a> — ~88 KB.</p>
+            <p>This page is a short explanation; the PDF contains the complete derivation and experimental notes.</p>
+          </section>
+        </div>
 
-If you want to read more, you can open the full ebook here:
-<a href="https://raphaelasanti.github.io/the-end-of-time/">The End of Time – Full Ebook</a>
-</p>
-<h2>License</h2>
-<p>
-This work is licensed under the Creative Commons CC BY‑NC‑ND 4.0 License.
-See the LICENSE file in the repository for full terms.
-</p>
+        <aside class="sidebar" role="complementary" aria-label="Support and links">
+          <div class="support">
+            <strong>Support the work</strong>
+            <p>My only income is voluntary donations. If this helped, please consider a small gift.</p>
+            <p><strong>Cash App:</strong><br /><a href="https://cash.app/$phirunltd" target="_blank" rel="noopener noreferrer">https://cash.app/$phirunltd</a></p>
+            <p><strong>Gumroad:</strong><br /><a href="https://phirun4.gumroad.com/l/zsmzjh" target="_blank" rel="noopener noreferrer">Donate via Gumroad</a></p>
+            <hr style="margin:10px 0;border:none;border-top:1px solid #e6e6e6;" />
+            <p style="font-size:0.95rem"><strong>License</strong><br />CC BY‑NC‑ND 4.0 — see <a href="LICENSE" target="_blank" rel="noopener noreferrer">LICENSE</a>.</p>
+            <p style="font-size:0.9rem;margin-top:6px"><strong>Author</strong><br />Raphael E. Asanti — Lucedale, MS</p>
+          </div>
+        </aside>
+      </div>
 
+      <footer>
+        <p>Repository: <a href="https://github.com/RaphaelAsanti/circle-area-without-pi" target="_blank" rel="noopener noreferrer">github.com/RaphaelAsanti/circle-area-without-pi</a> • Licensed CC BY‑NC‑ND 4.0</p>
+      </footer>
+    </main>
+  </div>
 </body>
 </html>
