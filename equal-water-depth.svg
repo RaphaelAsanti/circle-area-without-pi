@@ -1,0 +1,83 @@
+<svg viewBox="0 0 900 560" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
+  <rect x="0" y="0" width="900" height="560" fill="#ffffff"/>
+
+  <text x="450" y="40" text-anchor="middle" font-size="24" font-weight="bold" fill="#222">Equal Water Depth</text>
+  <text x="450" y="64" text-anchor="middle" font-size="14" fill="#555">Same volume of water poured into a cylinder and a square container of similar footprint</text>
+
+  <!-- ===================== RULER 1 (cylinder) ===================== -->
+  <g stroke="#666" stroke-width="1.5">
+    <line x1="150" y1="470" x2="150" y2="200"/>
+  </g>
+  <g font-size="14" fill="#444">
+    <!-- ticks 0-6 -->
+    <line x1="144" y1="470" x2="156" y2="470" stroke="#666" stroke-width="1.5"/>
+    <text x="136" y="474" text-anchor="end">0</text>
+    <line x1="144" y1="425" x2="156" y2="425" stroke="#666" stroke-width="1.5"/>
+    <text x="136" y="429" text-anchor="end">1</text>
+    <line x1="144" y1="380" x2="156" y2="380" stroke="#666" stroke-width="1.5"/>
+    <text x="136" y="384" text-anchor="end">2</text>
+    <line x1="144" y1="335" x2="156" y2="335" stroke="#666" stroke-width="1.5"/>
+    <text x="136" y="339" text-anchor="end">3</text>
+    <line x1="144" y1="290" x2="156" y2="290" stroke="#c0392b" stroke-width="2.5"/>
+    <text x="136" y="294" text-anchor="end" font-weight="bold" fill="#c0392b">4</text>
+    <line x1="144" y1="245" x2="156" y2="245" stroke="#666" stroke-width="1.5"/>
+    <text x="136" y="249" text-anchor="end">5</text>
+    <line x1="144" y1="200" x2="156" y2="200" stroke="#666" stroke-width="1.5"/>
+    <text x="136" y="204" text-anchor="end">6</text>
+  </g>
+
+  <!-- dashed line from ruler to cylinder water level -->
+  <line x1="156" y1="290" x2="190" y2="290" stroke="#c0392b" stroke-width="1.5" stroke-dasharray="4,3"/>
+
+  <!-- ===================== CYLINDER ===================== -->
+  <!-- container outline -->
+  <ellipse cx="260" cy="200" rx="70" ry="18" fill="none" stroke="#333" stroke-width="2"/>
+  <line x1="190" y1="200" x2="190" y2="470" stroke="#333" stroke-width="2"/>
+  <line x1="330" y1="200" x2="330" y2="470" stroke="#333" stroke-width="2"/>
+  <path d="M 190 470 A 70 18 0 0 0 330 470" fill="none" stroke="#333" stroke-width="2"/>
+
+  <!-- water body -->
+  <path d="M 190 290 L 190 470 A 70 18 0 0 0 330 470 L 330 290 A 70 18 0 0 1 190 290 Z"
+        fill="#4a90d9" fill-opacity="0.65" stroke="#2f6fb0" stroke-width="1.5"/>
+  <ellipse cx="260" cy="290" rx="70" ry="18" fill="#6fa8dc" fill-opacity="0.9" stroke="#2f6fb0" stroke-width="1.5"/>
+
+  <text x="260" y="500" text-anchor="middle" font-size="16" font-weight="bold" fill="#222">Cylinder</text>
+  <text x="260" y="520" text-anchor="middle" font-size="14" fill="#c0392b">depth = 4</text>
+
+  <!-- ===================== RULER 2 (square) ===================== -->
+  <g stroke="#666" stroke-width="1.5">
+    <line x1="520" y1="470" x2="520" y2="200"/>
+  </g>
+  <g font-size="14" fill="#444">
+    <line x1="514" y1="470" x2="526" y2="470" stroke="#666" stroke-width="1.5"/>
+    <text x="506" y="474" text-anchor="end">0</text>
+    <line x1="514" y1="425" x2="526" y2="425" stroke="#666" stroke-width="1.5"/>
+    <text x="506" y="429" text-anchor="end">1</text>
+    <line x1="514" y1="380" x2="526" y2="380" stroke="#666" stroke-width="1.5"/>
+    <text x="506" y="384" text-anchor="end">2</text>
+    <line x1="514" y1="335" x2="526" y2="335" stroke="#666" stroke-width="1.5"/>
+    <text x="506" y="339" text-anchor="end">3</text>
+    <line x1="514" y1="290" x2="526" y2="290" stroke="#c0392b" stroke-width="2.5"/>
+    <text x="506" y="294" text-anchor="end" font-weight="bold" fill="#c0392b">4</text>
+    <line x1="514" y1="245" x2="526" y2="245" stroke="#666" stroke-width="1.5"/>
+    <text x="506" y="249" text-anchor="end">5</text>
+    <line x1="514" y1="200" x2="526" y2="200" stroke="#666" stroke-width="1.5"/>
+    <text x="506" y="204" text-anchor="end">6</text>
+  </g>
+
+  <line x1="526" y1="290" x2="560" y2="290" stroke="#c0392b" stroke-width="1.5" stroke-dasharray="4,3"/>
+
+  <!-- ===================== SQUARE CONTAINER ===================== -->
+  <line x1="560" y1="200" x2="560" y2="470" stroke="#333" stroke-width="2"/>
+  <line x1="740" y1="200" x2="740" y2="470" stroke="#333" stroke-width="2"/>
+  <line x1="560" y1="470" x2="740" y2="470" stroke="#333" stroke-width="2"/>
+
+  <!-- water -->
+  <rect x="560" y="290" width="180" height="180" fill="#4a90d9" fill-opacity="0.65" stroke="#2f6fb0" stroke-width="1.5"/>
+  <rect x="560" y="286" width="180" height="8" fill="#6fa8dc" fill-opacity="0.9" stroke="#2f6fb0" stroke-width="1"/>
+
+  <text x="650" y="500" text-anchor="middle" font-size="16" font-weight="bold" fill="#222">Square</text>
+  <text x="650" y="520" text-anchor="middle" font-size="14" fill="#c0392b">depth = 4</text>
+
+  <text x="450" y="545" text-anchor="middle" font-size="13" fill="#666">Same water depth in both containers &#8594; used as the measurement baseline</text>
+</svg>

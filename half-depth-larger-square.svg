@@ -1,0 +1,79 @@
+<svg viewBox="0 0 1000 560" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
+  <rect x="0" y="0" width="1000" height="560" fill="#ffffff"/>
+
+  <text x="500" y="40" text-anchor="middle" font-size="24" font-weight="bold" fill="#222">Same Volume, Larger Container &#8594; Lower Depth</text>
+  <text x="500" y="64" text-anchor="middle" font-size="14" fill="#555">The cylinder still holds the same water as before. Poured into a wider square, the depth is cut in half.</text>
+
+  <!-- ===================== RULER 1 (cylinder) ===================== -->
+  <g stroke="#666" stroke-width="1.5">
+    <line x1="120" y1="470" x2="120" y2="200"/>
+  </g>
+  <g font-size="14" fill="#444">
+    <line x1="114" y1="470" x2="126" y2="470" stroke="#666" stroke-width="1.5"/>
+    <text x="106" y="474" text-anchor="end">0</text>
+    <line x1="114" y1="425" x2="126" y2="425" stroke="#666" stroke-width="1.5"/>
+    <text x="106" y="429" text-anchor="end">1</text>
+    <line x1="114" y1="380" x2="126" y2="380" stroke="#666" stroke-width="1.5"/>
+    <text x="106" y="384" text-anchor="end">2</text>
+    <line x1="114" y1="335" x2="126" y2="335" stroke="#666" stroke-width="1.5"/>
+    <text x="106" y="339" text-anchor="end">3</text>
+    <line x1="114" y1="290" x2="126" y2="290" stroke="#c0392b" stroke-width="2.5"/>
+    <text x="106" y="294" text-anchor="end" font-weight="bold" fill="#c0392b">4</text>
+    <line x1="114" y1="245" x2="126" y2="245" stroke="#666" stroke-width="1.5"/>
+    <text x="106" y="249" text-anchor="end">5</text>
+    <line x1="114" y1="200" x2="126" y2="200" stroke="#666" stroke-width="1.5"/>
+    <text x="106" y="204" text-anchor="end">6</text>
+  </g>
+
+  <line x1="126" y1="290" x2="160" y2="290" stroke="#c0392b" stroke-width="1.5" stroke-dasharray="4,3"/>
+
+  <!-- ===================== CYLINDER (unchanged from diagram 1) ===================== -->
+  <ellipse cx="230" cy="200" rx="70" ry="18" fill="none" stroke="#333" stroke-width="2"/>
+  <line x1="160" y1="200" x2="160" y2="470" stroke="#333" stroke-width="2"/>
+  <line x1="300" y1="200" x2="300" y2="470" stroke="#333" stroke-width="2"/>
+  <path d="M 160 470 A 70 18 0 0 0 300 470" fill="none" stroke="#333" stroke-width="2"/>
+
+  <path d="M 160 290 L 160 470 A 70 18 0 0 0 300 470 L 300 290 A 70 18 0 0 1 160 290 Z"
+        fill="#4a90d9" fill-opacity="0.65" stroke="#2f6fb0" stroke-width="1.5"/>
+  <ellipse cx="230" cy="290" rx="70" ry="18" fill="#6fa8dc" fill-opacity="0.9" stroke="#2f6fb0" stroke-width="1.5"/>
+
+  <text x="230" y="500" text-anchor="middle" font-size="16" font-weight="bold" fill="#222">Cylinder</text>
+  <text x="230" y="520" text-anchor="middle" font-size="14" fill="#c0392b">depth = 4 (same as before)</text>
+
+  <!-- ===================== RULER 2 (larger square) ===================== -->
+  <g stroke="#666" stroke-width="1.5">
+    <line x1="440" y1="470" x2="440" y2="200"/>
+  </g>
+  <g font-size="14" fill="#444">
+    <line x1="434" y1="470" x2="446" y2="470" stroke="#666" stroke-width="1.5"/>
+    <text x="426" y="474" text-anchor="end">0</text>
+    <line x1="434" y1="425" x2="446" y2="425" stroke="#666" stroke-width="1.5"/>
+    <text x="426" y="429" text-anchor="end">1</text>
+    <line x1="434" y1="380" x2="446" y2="380" stroke="#0a7a3a" stroke-width="2.5"/>
+    <text x="426" y="384" text-anchor="end" font-weight="bold" fill="#0a7a3a">2</text>
+    <line x1="434" y1="335" x2="446" y2="335" stroke="#666" stroke-width="1.5"/>
+    <text x="426" y="339" text-anchor="end">3</text>
+    <line x1="434" y1="290" x2="446" y2="290" stroke="#666" stroke-width="1.5"/>
+    <text x="426" y="294" text-anchor="end">4</text>
+    <line x1="434" y1="245" x2="446" y2="245" stroke="#666" stroke-width="1.5"/>
+    <text x="426" y="249" text-anchor="end">5</text>
+    <line x1="434" y1="200" x2="446" y2="200" stroke="#666" stroke-width="1.5"/>
+    <text x="426" y="204" text-anchor="end">6</text>
+  </g>
+
+  <line x1="446" y1="380" x2="480" y2="380" stroke="#0a7a3a" stroke-width="1.5" stroke-dasharray="4,3"/>
+
+  <!-- ===================== LARGER SQUARE CONTAINER ===================== -->
+  <line x1="480" y1="200" x2="480" y2="470" stroke="#333" stroke-width="2"/>
+  <line x1="820" y1="200" x2="820" y2="470" stroke="#333" stroke-width="2"/>
+  <line x1="480" y1="470" x2="820" y2="470" stroke="#333" stroke-width="2"/>
+
+  <!-- water: depth 2 units = 90px -->
+  <rect x="480" y="380" width="340" height="90" fill="#4a90d9" fill-opacity="0.65" stroke="#2f6fb0" stroke-width="1.5"/>
+  <rect x="480" y="376" width="340" height="8" fill="#6fa8dc" fill-opacity="0.9" stroke="#2f6fb0" stroke-width="1"/>
+
+  <text x="650" y="500" text-anchor="middle" font-size="16" font-weight="bold" fill="#222">Larger Square</text>
+  <text x="650" y="520" text-anchor="middle" font-size="14" fill="#0a7a3a">depth = 2 (half of diagram 1)</text>
+
+  <text x="500" y="545" text-anchor="middle" font-size="13" fill="#666">Same water volume, wider container &#8594; shallower depth (illustrates A&#8322; = A&#8321; &#215; (d&#8322;/d&#8321;))</text>
+</svg>
