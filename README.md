@@ -1,91 +1,30 @@
-# How To Calculate the Area of a Circle Without Pi
+# Circle Area Without Pi
 
-**By Raphael E. Asanti — July 2026**
+## Description
+This repository contains the *Circle Area Without Pi* explanation, demonstrating a structural derivation of the area of a circle without relying on π. It serves as one of the foundational mathematical pages in the broader set of explanatory works, illustrating method, rigor, and first‑principles reasoning.
 
----
+## Page Link
+https://raphaelasanti.github.io/circle-area-without-pi/
 
-## Abstract
+## PDF
+The PDF version of this explanation is available here:  
+https://raphaelasanti.github.io/circle-area-without-pi/circle-area-without-pi.pdf
 
-This paper presents a direct physical method for determining the area of a circle without using π. By comparing water volumes between a reference rectangle and a circular container, the method derives circle area from measurable depth ratios. The approach generalizes to any pair of shapes using the squared ratio of water depths, providing a practical and intuitive alternative to traditional geometric formulas.
-
----
-
-## Overview
-
-This repository contains:
-
-- The full research paper (PDF)
-- A summary of the physical method
-- Licensing information (CC BY‑NC‑ND 4.0)
-
-The method relies on the principle that **equal water weight implies equal volume**, allowing geometric areas to be inferred from water depth measurements.
-
----
-
-## The Method (Summary)
-
-1. Fill a **cylinder** with the diameter of the circle you want to measure with water.
-2. Pour that exact water volume into a **square container**.
-3. Measure:
-   - d_rect — water depth in the rectangle   
-   - d_circle — water depth in the circle 
-4. Compute the circle’s area using:
-
-
-
-\[
-A_circle = A_rect × (d_rect ÷ d_circle)\]
-
-
-
-### Generalized Form
-
-For any two shapes filled with the same water volume:
-
-
-
-\[
-A2 = A1 × (d2 ÷ d1)²
-\]
-
-
-
-This provides a **direct physical measurement** of area without π or calculus.
-
----
-
-## PDF Download
-
-**[Click here to download the full paper (PDF)](nopi.pdf)**
-
-## Web Version
-
-A mobile‑friendly, SEO‑optimized HTML presentation of the method is available here:
-
-**[View the index.html page](https://raphaelasanti.github.io/circle-area-without-pi/)**
-
-
----
+## Core Connections
+- **[Tilt of the Earth](https://github.com/RaphaelAsanti/tilt-of-the-earth)** — Another structural explanation connecting physical geometry to symbolic interpretation.
+- **[Eye of the Needle](https://github.com/the-eye-of-the-needle)** — Narrative foundation for the broader system in which this mathematical method appears.
+- **[Burned Bull / Elijah](https://github.com/RaphaelAsanti/burned-bull-elijah)** — Scriptural structural analysis demonstrating the same pattern‑recognition method used here.
 
 ## License
-
-This work is licensed under the **Creative Commons CC BY‑NC‑ND 4.0** License.  
-See the [`LICENSE`](LICENSE) file for full legal terms.
-
----
-## Repository Contents
-
-- `README.md` — Project overview  
-- `LICENSE` — Creative Commons license  
-- `nopi.pdf` — Full research paper  
-- **[index.html](https://raphaelasanti.github.io/circle-area-without-pi/)** — Web presentation of the method
-
----
+All content in this repository is licensed under the **Creative Commons Attribution 4.0 International (CC BY 4.0)** license.  
+https://creativecommons.org/licenses/by/4.0/
 
 ## Author
+Raphael Asanti
 
-Raphael E. Asanti  
-July 2026
+## Related Repositories
+A complete list of all repositories and pages is available on the main site index:  
+https://raphaelasanti.github.io/
 
-Main index: https://raphaelasanti.github.io/
-
+## Last Updated
+August 2026
