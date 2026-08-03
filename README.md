@@ -8,7 +8,7 @@ https://raphaelasanti.github.io/circle-area-without-pi/
 
 ## PDF
 The PDF version of this explanation is available here:  
-https://raphaelasanti.github.io/circle-area-without-pi/circle-area-without-pi.pdf
+https://raphaelasanti.github.io/circle-area-without-pi/nopi.pdf
 
 ## Core Connections
 - **[Tilt of the Earth](https://github.com/RaphaelAsanti/tilt-of-the-earth)** — Another structural explanation connecting physical geometry to symbolic interpretation.
