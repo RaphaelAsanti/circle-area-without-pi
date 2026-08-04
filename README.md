@@ -45,6 +45,10 @@ Share the public page on your social media to extend its reach:
 
 https://raphaelasanti.github.io/circle-area-without-pi/
 
+---
+
 **Free Ebook**  
+If you prefer not to donate, the same eBook is available here:
 https://github.com/raphaelasanti/the-end-of-time/
+
 
