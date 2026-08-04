@@ -29,8 +29,8 @@ July 2026
 
 ---
 
-  ### Donate
-Voluntary financial contributions are my only income.
+### Donate
+This work is sustained entirely by voluntary contributions.
 
 **Cash App**  
 https://cash.app/$phirunltd
@@ -39,7 +39,7 @@ https://cash.app/$phirunltd
 https://phirun4.gumroad.com/l/zsmzjh
 
 ### Contribute
-Sharing the page on your own social media helps it reach readers.
+Share this page on your social media to extend its reach.
 
 **Free Ebook**  
 https://github.com/raphaelasanti/the-end-of-time/
