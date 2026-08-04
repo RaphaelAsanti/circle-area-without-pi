@@ -1,20 +1,29 @@
-How to Accurately Calculate the Area of a Circle Without Pi
-A focused explanation of how to derive and calculate the area of a circle without explicitly using 
-𝜋
-.
-This page presents the structural logic, the substitutions, and the numeric framing that allow circle‑area computation through alternative constants and ratios.
+## How to Accurately Calculate the Area of a Circle Without Pi
 
-Files
-index.html — Primary page (HTML)  
-https://raphaelasanti.github.io/circle-area-without-pi/
+A concise structural overview of how to calculate the area of a circle without explicitly invoking \(\pi\).  
+This page outlines the substitutions, ratio‑based framing, and numeric structure that allow circle‑area computation through alternative constants.
 
-License  
-https://raphaelasanti.github.io/circle-area-without-pi/LICENSE.txt
+---
 
-Author
-Raphael E. Asanti
+### Files
+- **index.html — Primary page (HTML)**  
+  https://raphaelasanti.github.io/circle-area-without-pi/
+
+- **License**  
+  https://raphaelasanti.github.io/circle-area-without-pi/LICENSE.txt
+
+- **PDF**  
+  https://raphaelasanti.github.io/circle-area-without-pi/nopi.pdf
+
+---
+
+### Author
+Raphael E. Asanti  
 July 2026
 
-Related Pages
-Main Index  
-https://raphaelasanti.github.io/
+---
+
+### Related Pages
+- **Main Index**  
+  https://raphaelasanti.github.io/
+
