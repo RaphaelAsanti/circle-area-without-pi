@@ -39,7 +39,7 @@ https://cash.app/$phirunltd
 https://phirun4.gumroad.com/l/zsmzjh
 
 ### Contribute
-Sharing the work also helps it reach readers.
+Sharing the page on your own social media helps it reach readers.
 
 **Free Ebook**  
 https://github.com/raphaelasanti/the-end-of-time/
