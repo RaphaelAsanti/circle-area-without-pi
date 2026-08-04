@@ -27,3 +27,20 @@ July 2026
 - **Main Index**  
   https://raphaelasanti.github.io/
 
+---
+
+  ### Donate
+Voluntary financial contributions are my only income.
+
+**Cash App**  
+https://cash.app/$phirunltd
+
+**Gumroad (optional donation when downloading)**  
+https://phirun4.gumroad.com/l/zsmzjh
+
+### Contribute
+Sharing the work also helps it reach readers.
+
+**Free Ebook**  
+https://github.com/raphaelasanti/the-end-of-time/
+
