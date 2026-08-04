@@ -39,7 +39,9 @@ https://cash.app/$phirunltd
 https://phirun4.gumroad.com/l/zsmzjh
 
 ### Contribute
-Share this page on your social media to extend its reach.
+Share the public page on your social media to extend its reach:
+
+https://raphaelasanti.github.io/circle-area-without-pi/
 
 **Free Ebook**  
 https://github.com/raphaelasanti/the-end-of-time/
