@@ -38,6 +38,8 @@ https://cash.app/$phirunltd
 **Gumroad (optional donation when downloading)**  
 https://phirun4.gumroad.com/l/zsmzjh
 
+---
+
 ### Contribute
 Share the public page on your social media to extend its reach:
 
