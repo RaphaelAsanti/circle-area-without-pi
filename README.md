@@ -10,7 +10,7 @@ This page outlines the substitutions, ratio‑based framing, and numeric structu
   https://raphaelasanti.github.io/circle-area-without-pi/
 
 - **License**  
-  https://raphaelasanti.github.io/circle-area-without-pi/LICENSE.txt
+  https://raphaelasanti.github.io/circle-area-without-pi/LICENSE
 
 - **PDF**  
   https://raphaelasanti.github.io/circle-area-without-pi/nopi.pdf
