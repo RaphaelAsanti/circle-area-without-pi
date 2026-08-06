@@ -3,17 +3,20 @@
 <head>
   <meta charset="utf-8" />
   <title>How to Accurately Calculate the Area of a Circle Without Pi</title>
-  <meta name="description" content="A hands-on method that measures circle area without using π: transfer the same water volume between shapes and compare depths. Includes diagrams, a worked example, and a small calculator." />
-  <meta name="keywords" content="circle area without pi, water method, measurement, hands-on math, grade school geometry" />
+  <meta name="description" content="A hands-on method that measures circle area without using π: transfer the same water volume between shapes and compare depths. Includes diagrams, a worked example, and a small calculator to make the measurement-to-area conversion easy." />
+  <meta name="keywords" content="circle area without pi, water method, measurement, hands-on math, geometry" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="canonical" href="https://raphaelasanti.github.io/circle-area-without-pi/" />
+  <meta name="author" content="Raphael E. Asanti" />
 
-  <!-- Open Graph / Twitter -->
+  <!-- Open Graph / Twitter (add a real image URL for social previews) -->
   <meta property="og:title" content="How to Find the Area of a Circle Without π — A Simple Water Method" />
   <meta property="og:description" content="Use water and a reference shape to determine a circle's area exactly — no π required. Includes diagrams and a downloadable paper." />
   <meta property="og:url" content="https://raphaelasanti.github.io/circle-area-without-pi/" />
   <meta property="og:type" content="article" />
+  <meta property="og:image" content="https://raphaelasanti.github.io/circle-area-without-pi/og-image.png" />
   <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:creator" content="@RaphaelAsanti" />
 
   <!-- Structured data -->
   <script type="application/ld+json">
@@ -76,7 +79,7 @@
     .calculator { border: 1px dashed #ddd; padding: 12px; border-radius: 6px; margin-top: 8px; }
     .calculator label { display:block; margin-bottom:6px; font-size:0.95rem; }
     .calculator input[type="number"] { width: 100%; padding:8px; border:1px solid #ccc; border-radius:4px; margin-bottom:8px; }
-    .btn { display:inline-block; background:var(--accent); color:#fff; padding:8px 12px; border-radius:6px; cursor:pointer; text-decoration:none; }
+    .btn { display:inline-block; background:var(--accent); color:#fff; padding:8px 12px; border-radius:6px; cursor:pointer; text-decoration:none; border: none; }
     .result { margin-top:8px; font-weight:600; }
 
     footer { margin-top: 18px; color: var(--muted); font-size: 0.95rem; text-align:center; }
@@ -94,47 +97,21 @@
   <div class="wrap" role="document">
     <header>
       <div class="topnav">
-        <a href="https://raphaelasanti.github.io/">← Back to Main Index</a>
+        <a href="https://raphaelasanti.github.io/" rel="noopener noreferrer">← Back to Main Index</a>
       </div>
       <h1>How to Accurately Calculate the Area of a Circle Without π</h1>
       <p class="meta">A simple, hands-on measurement method using water. By Raphael E. Asanti — July 2026</p>
-      <p style="margin-top:6px"><strong>Quick hook:</strong> Use water and a rectangle you can measure to find a circle’s area exactly — no rounding of π needed. Try the calculator below after you read the steps.</p>
+      <p style="margin-top:6px"><strong>Quick hook:</strong> Use water and a rectangular reference you can measure to find a circle’s area exactly — no rounding of π required. Try the calculator below after you take your measurements.</p>
     </header>
 
-    <main id="main-content" role="main" class="section" aria-labelledby="method-heading">
+    <main id="main-content" role="main" aria-labelledby="method-heading" class="section">
       <div class="columns">
         <div class="content">
           <section class="section" id="abstract">
             <h2 id="method-heading">Abstract (in one line)</h2>
-            <p>This method measures equal water volumes in two shapes. Because the same volume = area × depth, comparing depths gives the ratio of areas. That gives the circle's area when you know the area of the reference shape.</p>
+            <p>This method measures equal water volumes in two shapes. Because the same volume = area × depth, comparing depths gives the ratio of areas. That gives the circle's area when you know the rectangular reference area.</p>
           </section>
-<div style="
-    float: right;
-    width: 280px;
-    margin: 0 0 20px 20px;
-    padding: 15px;
-    border: 1px solid #ccc;
-    background: #f9f9f9;
-    font-size: 0.9em;
-    line-height: 1.4;
-">
-    <strong>Support the Work</strong><br><br>
 
-    We have never sent a messenger who did not eat food and walk in the marketplaces.<br><br>
-
-    <strong>My only income is voluntary donations.</strong><br><br>
-
-    <strong>Cash App:</strong><br>
-    <a href="https://cash.app/$phirunltd">https://cash.app/$phirunltd</a><br><br>
-
-    <strong>Gumroad:</strong><br>
-    <a href="https://phirun4.gumroad.com/l/zsmzjh">Donate via Gumroad</a><br><br>
-
-    <strong>Free Ebook:</strong><br>
-    <a href="https://raphaelasanti.github.io/the-end-of-time/">
-        Download on GitHub
-    </a>
-</div>
           <section class="section" id="what-you-need">
             <h2>What you need (equipment)</h2>
             <ul>
@@ -155,7 +132,6 @@
               <li>Use the formula below to compute the circle's area.</li>
             </ol>
 
-            <!-- Diagram: equal-water-depth.svg -->
             <figure class="diagram" aria-labelledby="fig1-title fig1-desc">
               <img src="equal-water-depth.svg" alt="Two containers side-by-side: a rectangular tray and a circular container. Both hold the same water volume; the heights (depths) differ." />
               <figcaption>
@@ -169,7 +145,7 @@
             <p class="code">V = A<sub>rect</sub> × d<sub>rect</sub> = A<sub>circle</sub> × d<sub>circle</sub></p>
             <p>Rearrange to solve for the circle's area:</p>
             <p class="code">A<sub>circle</sub> = A<sub>rect</sub> × (d<sub>rect</sub> ÷ d<sub>circle</sub>)</p>
-            <p><strong>Important:</strong> The ratio uses <em>d_rect ÷ d_circle</em> (not squared). Use the same units for depths (for example, both in cm).</p>
+            <p><strong>Important:</strong> Use the same units for depths (for example, both in cm).</p>
           </section>
 
           <section class="section" id="example">
@@ -180,7 +156,6 @@
             <p class="code">A_circle = 200 × (4.0 ÷ 2.0) = 200 × 2 = 400 cm²</p>
             <p>So the circle's area is <strong>400 cm²</strong>. (This is exact given exact measurements of area and depths.)</p>
 
-            <!-- Diagram: half-depth-larger-square.svg -->
             <figure class="diagram" aria-labelledby="fig2-title fig2-desc">
               <img src="half-depth-larger-square.svg" alt="Illustration showing the rectangle at depth 4 and the circle at depth 2 to indicate the example's ratio." />
               <figcaption>
@@ -192,40 +167,110 @@
 
           <section class="section" id="calculator">
             <h2>Try it — quick calculator</h2>
-            <p>Enter what you measured and the calculator shows the circle area.</p>
+            <p>Enter what you measured and the calculator shows the circle area. Use the same units for area and depths (e.g., cm² and cm).</p>
+
             <div class="calculator" aria-live="polite">
-              <label for="a_rect">Reference area A_rect (in cm²)</label>
-              <input id="a_rect" type="number" min="0" step="any" placeholder="e.g. 200" />
+              <form id="calcForm" onsubmit="return false;" aria-describedby="calcHelp">
+                <label for="a_rect">Reference area A_rect (in cm²)</label>
+                <input id="a_rect" name="a_rect" type="number" min="0" step="any" placeholder="e.g. 200" inputmode="decimal" />
 
-              <label for="d_rect">Depth in rectangle d_rect (same units as d_circle)</label>
-              <input id="d_rect" type="number" min="0" step="any" placeholder="e.g. 4.0" />
+                <label for="d_rect">Depth in rectangle d_rect (same units as d_circle)</label>
+                <input id="d_rect" name="d_rect" type="number" min="0" step="any" placeholder="e.g. 4.0" inputmode="decimal" />
 
-              <label for="d_circle">Depth in circle d_circle</label>
-              <input id="d_circle" type="number" min="0" step="any" placeholder="e.g. 2.0" />
+                <label for="d_circle">Depth in circle d_circle</label>
+                <input id="d_circle" name="d_circle" type="number" min="0" step="any" placeholder="e.g. 2.0" inputmode="decimal" />
 
-              <button id="calcBtn" class="btn" type="button">Compute A_circle</button>
-              <div id="calcResult" class="result" aria-live="polite"></div>
+                <button id="calcBtn" class="btn" type="button">Compute A_circle</button>
+                <div id="calcResult" class="result" aria-live="polite"></div>
+                <div id="calcHelp" style="font-size:0.9rem;color:var(--muted);margin-top:6px;">Tip: Ensure d_circle is not zero. For best accuracy weigh the water if possible.</div>
+              </form>
             </div>
 
+            <noscript>
+              <p><em>Calculator requires JavaScript. Compute manually using A_circle = A_rect × (d_rect ÷ d_circle).</em></p>
+            </noscript>
+
             <script>
-              // Simple, accessible calculator
               (function(){
                 var btn = document.getElementById('calcBtn');
-                btn.addEventListener('click', function(){
-                  var aRect = parseFloat(document.getElementById('a_rect').value);
-                  var dRect = parseFloat(document.getElementById('d_rect').value);
-                  var dCircle = parseFloat(document.getElementById('d_circle').value);
-                  var out = document.getElementById('calcResult');
+                var aRectInput = document.getElementById('a_rect');
+                var dRectInput = document.getElementById('d_rect');
+                var dCircleInput = document.getElementById('d_circle');
+                var out = document.getElementById('calcResult');
 
-                  if (!isFinite(aRect) || !isFinite(dRect) || !isFinite(dCircle) || dCircle === 0) {
-                    out.textContent = 'Please enter positive numbers for all fields and ensure d_circle is not zero.';
+                function formatNumber(n) {
+                  // show up to 4 decimal places, remove trailing zeros
+                  return Number.isFinite(n) ? (+n.toFixed(4)).toString() : '—';
+                }
+
+                function compute() {
+                  var aRect = parseFloat(aRectInput.value);
+                  var dRect = parseFloat(dRectInput.value);
+                  var dCircle = parseFloat(dCircleInput.value);
+
+                  // Validation: must be finite and positive (area can be zero theoretically but not helpful)
+                  if (!isFinite(aRect) || !isFinite(dRect) || !isFinite(dCircle)) {
+                    out.textContent = 'Please enter numbers for all fields.';
+                    out.style.color = '#b22222';
                     return;
                   }
+                  if (dCircle === 0) {
+                    out.textContent = 'd_circle must not be zero.';
+                    out.style.color = '#b22222';
+                    return;
+                  }
+                  if (aRect < 0 || dRect < 0 || dCircle < 0) {
+                    out.textContent = 'Please enter non-negative values.';
+                    out.style.color = '#b22222';
+                    return;
+                  }
+
                   var aCircle = aRect * (dRect / dCircle);
-                  // Round to reasonable precision for display
-                  var rounded = Math.round(aCircle * 100) / 100;
-                  out.textContent = 'A_circle = ' + rounded + ' (same units as A_rect)';
+                  out.style.color = '';
+                  out.textContent = 'A_circle = ' + formatNumber(aCircle) + ' (same units as A_rect)';
+                }
+
+                // Click handler
+                btn.addEventListener('click', compute);
+
+                // Support Enter key in inputs
+                [aRectInput, dRectInput, dCircleInput].forEach(function(input){
+                  input.addEventListener('keydown', function(e){
+                    if (e.key === 'Enter') {
+                      e.preventDefault();
+                      compute();
+                      btn.focus();
+                    }
+                  });
                 });
+
+                // Optional: preserve last inputs in sessionStorage for convenience
+                try {
+                  var key = 'nopi.calc';
+                  var save = function() {
+                    sessionStorage.setItem(key, JSON.stringify({
+                      a: aRectInput.value,
+                      dr: dRectInput.value,
+                      dc: dCircleInput.value
+                    }));
+                  };
+                  var restore = function() {
+                    var s = sessionStorage.getItem(key);
+                    if (!s) return;
+                    try {
+                      var data = JSON.parse(s);
+                      if (data) {
+                        aRectInput.value = data.a || '';
+                        dRectInput.value = data.dr || '';
+                        dCircleInput.value = data.dc || '';
+                      }
+                    } catch(e) {}
+                  };
+                  [aRectInput, dRectInput, dCircleInput].forEach(function(i){ i.addEventListener('input', save); });
+                  restore();
+                } catch(e) {
+                  // storage not available — ignore
+                }
               })();
             </script>
           </section>
@@ -237,9 +282,8 @@
               <li>Container walls: thin straight sides are best. Round rims and sloping sides can change the effective area near the top.</li>
               <li>Volume loss: pour carefully to avoid spillage. Use a funnel or transfer cup for better control.</li>
               <li>Units: measure area and depths in consistent units (e.g., cm² and cm).</li>
-              <li><strong>For best accuracy, weigh the transferred water:</strong> mass and volume of water are directly related (1 milliliter ≈ 1 gram at normal temperatures), so weighing the water with a kitchen or lab scale avoids reading small depth differences and reduces error from the meniscus or ruler placement.</li>
+              <li><strong>For best accuracy, weigh the transferred water:</strong> mass and volume of water are directly related (1 mL ≈ 1 g at normal temperatures), so weighing reduces human-volume errors.</li>
             </ul>
-            <p>How to weigh for accuracy (simple): place an empty transfer container on a scale and tare (zero) it. Pour the water from the reference container into the transfer container and read the mass in grams. Because 1 g ≈ 1 mL, you can convert that mass directly to volume (in mL). Use that same volume to fill the circular container and measure its depth. Weighing avoids many common measurement mistakes and is the recommended method when a scale is available. Note that very large temperature changes slightly change water density, but for ordinary classroom conditions the difference is negligible.</p>
             <p>If you follow these, your measured area will match the formula exactly to within your measurement precision.</p>
           </section>
 
@@ -248,8 +292,29 @@
             <p><a href="nopi.pdf" target="_blank" rel="noopener noreferrer">Download the full paper (nopi.pdf)</a> — ~88 KB.</p>
             <p>This page is a short explanation; the PDF contains the complete derivation and experimental notes.</p>
           </section>
+        </div>
 
+        <aside class="sidebar" aria-label="Support and links">
+          <div class="support">
+            <strong>Support the Work</strong>
+            <p>My only income is voluntary donations. If you’d like to support this work, thank you — any amount helps.</p>
+
+            <p><strong>Cash App:</strong><br>
+            <a href="https://cash.app/$phirunltd" target="_blank" rel="noopener noreferrer">https://cash.app/$phirunltd</a></p>
+
+            <p><strong>Gumroad:</strong><br>
+            <a href="https://phirun4.gumroad.com/l/zsmzjh" target="_blank" rel="noopener noreferrer">Donate via Gumroad</a></p>
+
+            <p><strong>Free Ebook:</strong><br>
+            <a href="https://raphaelasanti.github.io/the-end-of-time/" target="_blank" rel="noopener noreferrer">Download on GitHub</a></p>
+          </div>
+        </aside>
+      </div>
     </main>
+
+    <footer>
+      <p>© Raphael E. Asanti — <a href="https://raphaelasanti.github.io/" rel="noopener noreferrer">raphaelasanti.github.io</a></p>
+    </footer>
   </div>
 </body>
 </html>
