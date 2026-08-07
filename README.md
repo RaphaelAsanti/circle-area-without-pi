@@ -1,39 +1,83 @@
-‎README.md‎
-+104-54Lines changed: 104 additions & 54 deletions
+# How to Accurately Calculate the Area of a Circle Without π
 
-Original file line number	Diff line number	Diff line change
-@@ -1,54 +1,104 @@
-## How to Accurately Calculate the Area of a Circle Without Pi
-A concise structural overview of how to calculate the area of a circle without explicitly invoking \(\pi\).  
-This page outlines the substitutions, ratio‑based framing, and numeric structure that allow circle‑area computation through alternative constants.
+A concise structural overview of a direct, physical method for determining the area of a circle without explicitly invoking the mathematical constant π. This repository contains a small static page and a PDF explaining the substitution and ratio-based framing that let you compute circle area using alternative constants.
+
 ---
-### Files
-- **index.html — Primary page (HTML)**  
-  https://raphaelasanti.github.io/circle-area-without-pi/
-- **License**  
-  https://github.com/raphaelasanti/circle-area-without-pi/blob/main/LICENSE
-- **PDF**  
-  https://raphaelasanti.github.io/circle-area-without-pi/nopi.pdf
+
+## Quick links
+- Live demo: https://raphaelasanti.github.io/circle-area-without-pi/
+- PDF: https://raphaelasanti.github.io/circle-area-without-pi/nopi.pdf
+- Source & license: [LICENSE](https://github.com/raphaelasanti/circle-area-without-pi/blob/main/LICENSE)
+
 ---
-### Author
-Raphael E. Asanti  
-July 2026
+
+## Table of contents
+- [Overview](#overview)
+- [Key idea](#key-idea)
+- [How to use](#how-to-use)
+- [Run/preview locally](#runpreview-locally)
+- [Contributing](#contributing)
+- [Donate](#donate)
+- [Author and license](#author-and-license)
+
 ---
-### Related Pages
-- **Main Index**  
-  https://raphaelasanti.github.io/
+
+## Overview
+This project documents a physical approach and algebraic substitutions that produce the area of a circle without directly referencing π. The material explains the numeric structure and ratio framing used to compute area and provides a ready-to-read PDF and a web page for easier distribution.
+
 ---
-### Donate
-This work is sustained entirely by voluntary contributions.
-**Cash App**  
-https://cash.app/$phirunltd
-**Gumroad (optional donation when downloading)**  
-https://phirun4.gumroad.com/l/zsmzjh
+
+## Key idea
+- Reframe circle-area computation using measured ratios and alternative constants.
+- Provide a step-by-step substitution so the final numeric evaluation does not require writing the symbol π explicitly.
+- Emphasize reproducible, physical measurement and a numeric recipe suitable for practical computation.
+
 ---
-### Contribute
-Share the public page on your social media to extend its reach:
-https://raphaelasanti.github.io/circle-area-without-pi/
+
+## How to use
+- Visit the online page: https://raphaelasanti.github.io/circle-area-without-pi/
+- Download/read the PDF: https://raphaelasanti.github.io/circle-area-without-pi/nopi.pdf
+- For questions or discussion, open an issue in this repository.
+
+Example (illustrative):
+- The site/PDF walks through the substitutions and numeric steps for computing the area given a measured radius or circumference. See the PDF for worked numeric examples.
+
 ---
-**Free Ebook**  
+
+## Run / preview locally
+This is a static HTML site. To preview locally:
+1. Clone the repo:
+   git clone https://github.com/RaphaelAsanti/circle-area-without-pi.git
+2. Serve locally from the repo root (Python 3 recommended):
+   python -m http.server 8000
+3. Open http://localhost:8000 in your browser and navigate to `index.html`.
+
+---
+
+## Contributing
+Improvements are welcome. Suggested ways to contribute:
+- Fix typos or clarify explanations (open a PR).
+- Add explicit numeric examples or interactive demos.
+- Add a CONTRIBUTING.md and CODE_OF_CONDUCT.md if you expect external contributors.
+
+If you want to suggest a research/citation update or new example, open an issue describing the change first.
+
+---
+
+## Donate
+This work is sustained by voluntary contributions.
+
+- Cash App: https://cash.app/$phirunltd  
+- Gumroad (optional donation when downloading): https://phirun4.gumroad.com/l/zsmzjh
+
 If you prefer not to donate, the same eBook is available here:
-https://github.com/raphaelasanti/the-end-of-time/
+- Free ebook: https://github.com/raphaelasanti/the-end-of-time/
+
+---
+
+## Author and license
+Raphael E. Asanti — July 2026
+
+License: see [LICENSE](https://github.com/raphaelasanti/circle-area-without-pi/blob/main/LICENSE)
+
+---
