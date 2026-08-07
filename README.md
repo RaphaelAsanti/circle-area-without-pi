@@ -15,7 +15,6 @@ A concise structural overview of a direct, physical method for determining the a
 - [Overview](#overview)
 - [Key idea](#key-idea)
 - [How to use](#how-to-use)
-- [Run/preview locally](#runpreview-locally)
 - [Contributing](#contributing)
 - [Donate](#donate)
 - [Author and license](#author-and-license)
@@ -41,16 +40,6 @@ This project documents a physical approach and algebraic substitutions that prod
 
 Example (illustrative):
 - The site/PDF walks through the substitutions and numeric steps for computing the area given a measured radius or circumference. See the PDF for worked numeric examples.
-
----
-
-## Run / preview locally
-This is a static HTML site. To preview locally:
-1. Clone the repo:
-   git clone https://github.com/RaphaelAsanti/circle-area-without-pi.git
-2. Serve locally from the repo root (Python 3 recommended):
-   python -m http.server 8000
-3. Open http://localhost:8000 in your browser and navigate to `index.html`.
 
 ---
 
