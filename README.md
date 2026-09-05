@@ -1,6 +1,6 @@
 # How to Accurately Calculate the Area of a Circle Without π
 
-[![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
+![License: All Rights Reserved](https://img.shields.io/badge/License-All%20Rights%20Reserved-lightgrey.svg)
 [![GitHub Pages](https://img.shields.io/badge/demo-GitHub%20Pages-blue.svg)](https://raphaelasanti.github.io/circle-area-without-pi/)
 
 A concise structural overview of a direct, physical method for determining the area of a circle without explicitly invoking the mathematical constant π. This repository contains a small static page and interactive materials exploring an alternative computational approach.
