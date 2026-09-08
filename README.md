@@ -1,4 +1,4 @@
-# How to Accurately Calculate the Area of a Circle Without π
+# How to Measure the Area of a Circle Without Pi, Perfectly
 
 ![License: All Rights Reserved](https://img.shields.io/badge/License-All%20Rights%20Reserved-lightgrey.svg)
 [![GitHub Pages](https://img.shields.io/badge/demo-GitHub%20Pages-blue.svg)](https://raphaelasanti.github.io/circle-area-without-pi/)
