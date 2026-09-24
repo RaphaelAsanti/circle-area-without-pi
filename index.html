@@ -172,16 +172,16 @@
 
             <div class="calculator" aria-live="polite">
               <form id="calcForm" onsubmit="return false;" aria-describedby="calcHelp">
-                <label for="a_rect">Reference area A_rect (in cm²)</label>
+                <label for="a_rect">Reference (area of rectangle) A_rect (in cm²)</label>
                 <input id="a_rect" name="a_rect" type="number" min="0" step="any" placeholder="e.g. 200" inputmode="decimal" />
 
-                <label for="d_rect">Depth in rectangle d_rect (same units as d_circle)</label>
+                <label for="d_rect">Depth of water in rectangle d_rect (same units as d_circle)</label>
                 <input id="d_rect" name="d_rect" type="number" min="0" step="any" placeholder="e.g. 4.0" inputmode="decimal" />
 
-                <label for="d_circle">Depth in circle d_circle</label>
+                <label for="d_circle">Depth of water in cylinder d_circle</label>
                 <input id="d_circle" name="d_circle" type="number" min="0" step="any" placeholder="e.g. 2.0" inputmode="decimal" />
 
-                <button id="calcBtn" class="btn" type="button">Compute A_circle</button>
+                <button id="calcBtn" class="btn" type="button">Compute area of circle A_circle</button>
                 <div id="calcResult" class="result" aria-live="polite"></div>
                 <div id="calcHelp" style="font-size:0.9rem;color:var(--muted);margin-top:6px;">Tip: Ensure d_circle is not zero. For best accuracy weigh the water if possible.</div>
               </form>
